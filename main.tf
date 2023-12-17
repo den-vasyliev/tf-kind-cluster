@@ -10,6 +10,8 @@ resource "kind_cluster" "this" {
         kind: Cluster
         nodes:
         - role: control-plane
+          image: kindest/node:v1.29.0@sha256:eaa1450915475849a73a9227b8f201df25e55e268e5d619312131292e324d570
         - role: worker
+          image: kindest/node:v1.29.0@sha256:eaa1450915475849a73a9227b8f201df25e55e268e5d619312131292e324d570
     EOF
 }
